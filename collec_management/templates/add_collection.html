@@ -1,0 +1,25 @@
+{% extends './base.html' %}
+
+{% block title %}Ajouter une Nouvelle Collection{% endblock %}
+
+{% block content %}
+<div class="container mt-5 d-flex justify-content-center">
+    <div class="col-md-8 col-lg-6">
+        <h1 class="mb-4 text-center">Ajouter une Nouvelle Collection</h1>
+        <form method="post" class="card p-4 shadow-sm">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="id_title" class="form-label">Titre</label>
+                {{ form.title }}
+            </div>
+            <div class="mb-3">
+                <label for="id_description" class="form-label">Description</label>
+                {{ form.description }}
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Ajouter</button>
+        </form>
+        <a href="{% url 'collection_list' %}" class="btn btn-secondary w-100 mt-3">Retour à la liste des collections</a>
+    </div>
+</div>
+{% endblock %}
+

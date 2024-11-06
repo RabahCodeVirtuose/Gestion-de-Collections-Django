@@ -1,0 +1,30 @@
+{% extends './base.html' %}
+
+{% block title %}Liste des Collections{% endblock %}
+
+{% block content %}
+    <h1>Liste des Collections</h1>
+    <table class="table table-striped table-hover " >
+        <thead>
+            <tr>
+                <th >Titre</th>
+                <th>Date de Création</th>
+                <th>Détails</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for collection in collections %}
+            <tr>
+                <td>{{ collection.title }}</td>
+                <td>{{ collection.creation_date }}</td>
+                <td><a class="btn btn-primary btn-sm" href="{% url 'collection_detail' collection.id %}">Voir la fiche</a></td>
+                <td>
+                    <a class="btn btn-warning btn-sm" href="{% url 'edit_collection' collection.id %}">Modifier</a>
+                    <a class="btn btn-danger btn-sm" href="{% url 'delete_collection' collection.id %}">Supprimer</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends './base.html' %}
+
+{% block title %}Modifier une Collection{% endblock %}
+
+{% block content %}
+<div class="container d-flex justify-content-center mt-5">
+    <div class="card shadow-sm p-4 col-md-8 col-lg-6">
+        <h2 class="card-title text-center mb-4">Modifier une Collection</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary w-100">Enregistrer les modifications</button>
+        </form>
+        <a href="{% url 'collection_list' %}" class="btn btn-secondary w-100 mt-3">Annuler</a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends './base.html' %}
+
+{% block title %}Détails de la collection{% endblock %}
+
+{% block content %}
+<div class="container d-flex justify-content-center mt-5">
+    <div class="card shadow-sm p-4 col-md-8 col-lg-6">
+        <h2 class="card-title text-center mb-4">{{ collection.title }}</h2>
+        <div class="card-body">
+            <p class="card-text"><strong>Description :</strong> {{ collection.description }}</p>
+            <p class="card-text"><strong>Date de Création :</strong> {{ collection.creation_date }}</p>
+        </div>
+        <div class="text-center mt-3">
+            <a href="{% url 'collection_list' %}" class="btn btn-secondary">Retour à la liste des collections</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

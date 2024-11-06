@@ -1,0 +1,110 @@
+[
+{
+    "model": "collec_management.collec",
+    "pk": 9,
+    "fields": {
+        "title": "Collection Art Moderne",
+        "description": "Une collection dédiée à l'art moderne.",
+        "creation_date": "2024-10-31"
+    }
+},
+{
+    "model": "collec_management.collec",
+    "pk": 10,
+    "fields": {
+        "title": "Vinyles Anciens",
+        "description": "Collection de vinyles rares et anciens.",
+        "creation_date": "2024-10-31"
+    }
+},
+{
+    "model": "collec_management.collec",
+    "pk": 11,
+    "fields": {
+        "title": "Photographies de Voyage",
+        "description": "Photos prises lors de divers voyages.",
+        "creation_date": "2024-10-31"
+    }
+},
+{
+    "model": "collec_management.collec",
+    "pk": 12,
+    "fields": {
+        "title": "Monnaies du Monde",
+        "description": "Collection de monnaies anciennes du monde.",
+        "creation_date": "2024-10-31"
+    }
+},
+{
+    "model": "collec_management.collec",
+    "pk": 13,
+    "fields": {
+        "title": "Objets d'Artisanat",
+        "description": "Artisanat du monde entier.",
+        "creation_date": "2024-10-31"
+    }
+},
+{
+    "model": "collec_management.collec",
+    "pk": 14,
+    "fields": {
+        "title": "Affiches de Films",
+        "description": "Affiches de films cultes et rares.",
+        "creation_date": "2024-10-31"
+    }
+},
+{
+    "model": "collec_management.collec",
+    "pk": 15,
+    "fields": {
+        "title": "Livres de Science",
+        "description": "Collection de livres scientifiques.",
+        "creation_date": "2024-10-31"
+    }
+},
+{
+    "model": "collec_management.collec",
+    "pk": 16,
+    "fields": {
+        "title": "Cartes Postales Vintage",
+        "description": "Cartes postales des années 50.",
+        "creation_date": "2024-10-31"
+    }
+},
+{
+    "model": "collec_management.collec",
+    "pk": 17,
+    "fields": {
+        "title": "Figurines de Super-Héros",
+        "description": "Figurines de collection de divers super-héros.",
+        "creation_date": "2024-10-31"
+    }
+},
+{
+    "model": "collec_management.collec",
+    "pk": 18,
+    "fields": {
+        "title": "Instruments de Musique",
+        "description": "Instruments de musique classiques.",
+        "creation_date": "2024-10-31"
+    }
+},
+{
+    "model": "collec_management.collec",
+    "pk": 19,
+    "fields": {
+        "title": "Peintures Abstraites",
+        "description": "Peintures abstraites des années 60.",
+        "creation_date": "2024-10-31"
+    }
+},
+{
+    "model": "collec_management.collec",
+    "pk": 20,
+    "fields": {
+        "title": "Photographies Noir et Blanc",
+        "description": "Collection de photos en noir et blanc.",
+        "creation_date": "2024-10-31"
+    }
+}
+]

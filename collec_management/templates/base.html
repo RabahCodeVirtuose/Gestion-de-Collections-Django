@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Application de Collections{% endblock %}</title>
+    {% load django_bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+</head>
+<body style="background-color: #dbe4fb9d;">
+    <!-- Menu de navigation -->
+    <!-- Menu de navigation -->
+<nav class="navbar navbar-expand-lg"  style="background-color: #6f94af9a;">
+    <div class="container-fluid">
+        <!-- Bouton Accueil -->
+       
+
+        
+        
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="{% url 'home' %}">
+                        <button type="button" class="btn btn-outline-dark mx-2">Accueil</button>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'collection_list' %}">
+                        <button type="button" class="btn btn-outline-dark mx-2">Liste des Collections</button>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'add_collection' %}">
+                        <button type="button" class="btn btn-outline-dark mx-2">Ajouter une Collection</button>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'about' %}">
+                        <button type="button" class="btn btn-outline-dark mx-2">À propos</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <!-- Contenu principal -->
+    <div class="container mt-4">
+        {% block content %}
+        <!-- Contenu spécifique à chaque page -->
+        {% endblock %}
+    </div> 
+</body>
+</html>
